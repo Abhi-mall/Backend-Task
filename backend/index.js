@@ -20,9 +20,9 @@ app.use(cookieParser())
 
 const PORT = process.env.PORT || 8080
 
-app.use('/auth', authRoutes);
-app.use('/locations', locationsRoutes);
-app.use('/inspections', inspectionsRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/locations', locationsRoutes);
+app.use('/api/inspections', inspectionsRoutes);
 
 app.get("/", (req, res)=> {
   res.json({
